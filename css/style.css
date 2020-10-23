@@ -1,4 +1,4 @@
-/*normalize*/
+/* normalize */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -341,3 +341,204 @@ template {
 [hidden] {
   display: none;
 }
+
+/* general */
+body {
+  background-color: #000;
+}
+
+.container {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* select */
+/* header */
+.header-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-content .header-logo {
+  padding-top: 16px;
+  padding-bottom: 17px;
+}
+
+.header-content .nav-menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.header-content .nav-menu__item {
+  list-style: none;
+  margin-right: 40px;
+}
+
+.header-content .nav-menu__item:last-child {
+  margin-right: 0;
+}
+
+.header-content .nav-menu__link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.header-content .nav-menu__link:after {
+  display: block;
+  background-color: #FFD600;
+  content: '';
+  height: 1px;
+  width: 0%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+.header-content .nav-menu__link:hover:after {
+  width: 100%;
+}
+
+.header-content .nav-menu__link.no-after:after {
+  width: 0%;
+}
+
+/*select*/
+.select {
+  position: relative;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+.select__trigger {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  max-width: 100%;
+  padding: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 20px;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.select__trigger::after {
+  content: '';
+  width: 0.75rem;
+  height: 0.75rem;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-image: url("/images/down_arrow.svg");
+}
+
+.select__trigger:focus {
+  outline: none;
+}
+
+.select_show .select__trigger::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.select__dropdown {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  border: none;
+  max-height: 10rem;
+  overflow: hidden;
+}
+
+.select_show .select__dropdown {
+  display: block;
+}
+
+.select_show .select__backdrop {
+  display: block;
+}
+
+.select__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.select__item {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  color: #fff;
+  padding-left: 0;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.select__item:after {
+  display: block;
+  background-color: #FFD600;
+  content: '';
+  height: 1px;
+  width: 0%;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+.select__item:hover:after {
+  width: 100%;
+}
+
+.select__backdrop {
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  background-color: transparent;
+}
+
+/*end select*/
