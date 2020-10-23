@@ -475,10 +475,11 @@ img {
   height: 0.75rem;
   -webkit-background-size: cover;
           background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .select__trigger:hover::after {
-  background-image: url("/images/arrow/down_arrow.svg");
+  background-image: url("../images/arrow/arrowdown.svg");
 }
 
 .select__trigger:focus {
@@ -701,7 +702,7 @@ img {
 .slider-dots__item {
   width: 30px;
   height: 5px;
-  background-color: #fff;
+  background-color: white;
   margin-right: 10px;
 }
 

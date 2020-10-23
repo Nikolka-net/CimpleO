@@ -80,10 +80,11 @@
 	width: 0.75rem;
 	height: 0.75rem;
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .select__trigger:hover::after {
-	background-image: url('/images/arrow/down_arrow.svg');
+	background-image: url('../images/arrow/arrowdown.svg');
 }
 
 .select__trigger:focus {
