@@ -1,0 +1,146 @@
+.about {
+	margin-top: 304px;
+}
+
+.slider {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+	&-item {
+
+		&__title {
+			width: 688px;
+			color: #000;
+			-webkit-text-stroke: 1px #fff;
+			font-family: Russo One;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 64px;
+			line-height: 77px;
+			display: flex;
+			flex-direction: column;
+			-ms-flex-align: center;
+			align-items: center;
+			text-align: center;
+			word-spacing: -8px;
+			margin: 0;
+
+		}
+
+		&__link {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			padding: 12px 24px;
+			color: #fff;
+			font-family: 'Nunito', sans-serif;
+
+			&_collumn {
+				flex-direction: column;
+			}
+		}
+
+		&__text {
+			display: inline-block;
+			line-height: 1;
+			cursor: pointer;
+
+		}
+
+		&__text::after {
+			display: block;
+			background-color: #FFD600;
+			content: '';
+			height: 1px;
+			width: 0%;
+			transition: width 0.3s ease-in-out;
+		}
+
+		&__text:hover::after {
+			width: 100%;
+		}
+
+		&__img {
+			margin-left: 10px;
+			transform: rotate(270deg);
+
+			&_rotate {
+				transform: rotate(0) translateY(10px);
+			}
+		}
+	}
+}
+
+.slider-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 62px;
+}
+
+.slider-dots {
+	margin-top: 148px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+
+	&__item {
+		width: 30px;
+		height: 5px;
+		background-color: #fff;
+		margin-right: 10px;
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+}
+
+/*slider*/
+
+.slider-dots {
+	text-align: center;
+}
+
+.slider-dots__item {
+	cursor: pointer;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots__item:hover {
+	background-color: #7031E7;
+}
+
+/* Анимация слайдов */
+.slider .slider-item {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: .4
+	}
+
+	to {
+		opacity: 1
+	}
+}
+
+/*end slider*/

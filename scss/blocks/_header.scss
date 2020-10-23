@@ -40,7 +40,7 @@
 			cursor: pointer;
 		}
 
-		&__link:after {
+		&__link::after {
 			display: block;
 			background-color: #FFD600;
 			content: '';
@@ -49,11 +49,11 @@
 			transition: width 0.3s ease-in-out;
 		}
 
-		&__link:hover:after {
+		&__link:hover::after {
 			width: 100%;
 		}
 
-		&__link.no-after:after {
+		&__link.no-after::after {
 			width: 0%;
 		}
 	}
@@ -88,7 +88,10 @@
 	width: 0.75rem;
 	height: 0.75rem;
 	background-size: cover;
-	background-image: url('/images/down_arrow.svg');
+}
+
+.select__trigger:hover::after {
+	background-image: url('/images/arrow/down_arrow.svg');
 }
 
 .select__trigger:focus {
@@ -133,7 +136,7 @@
 	cursor: pointer;
 }
 
-.select__item:after {
+.select__item::after {
 	display: block;
 	background-color: #FFD600;
 	content: '';
@@ -142,7 +145,7 @@
 	transition: width 0.3s ease-in-out;
 }
 
-.select__item:hover:after {
+.select__item:hover::after {
 	width: 100%;
 }
 

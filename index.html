@@ -14,7 +14,7 @@
 <body>
 
 	<!-- header -->
-	<header class="header">
+	<header class="header" id="home">
 		<div class="container">
 			<div class="header-content">
 				<div class="header-logo">
@@ -25,10 +25,10 @@
 				<nav class="header-nav">
 					<ul class="nav-menu">
 						<li class="nav-menu__item">
-							<a class="nav-menu__link" href="#">Home</a>
+							<a class="nav-menu__link" href="#home">Home</a>
 						</li>
 						<li class="nav-menu__item">
-							<a class="nav-menu__link" href="#">About Us</a>
+							<a class="nav-menu__link" href="#aboutUs">About Us</a>
 						</li>
 						<li class="nav-menu__item">
 							<a class="nav-menu__link" href="#">Services</a>
@@ -55,7 +55,91 @@
 	<!-- end header -->
 
 	<!-- main -->
-	
+	<!-- section about -->
+	<section class="about" id="aboutUs">
+		<div class="container">
+			<div class="slider">
+
+				<div class="slider-item">
+					<h2 class="slider-item__title">
+						<span>Fullstack</span>
+						<span>CMS Development</span>
+						<span>JAMStack</span>
+					</h2>
+					<div class="slider-link">
+						<a href="#" class="slider-item__link">
+							<span class="slider-item__text">View Al</span>
+							<img src="./images/arrow/meet.svg" alt="Узнать больше" class="slider-item__img">
+						</a>
+					</div>
+				</div>
+
+				<div class="slider-item">
+					<h2 class="slider-item__title">
+						<span>Fullstack</span>
+						<span>CMS Development</span>
+						<span>JAMStack</span>
+					</h2>
+					<div class="slider-link">
+						<a href="#" class="slider-item__link">
+							<span class="slider-item__text">All Posts</span>
+							<img src="./images/arrow/meet.svg" alt="Узнать больше" class="slider-item__img">
+						</a>
+					</div>
+				</div>
+
+				<div class="slider-item" id="slide_showing">
+					<h1 class="slider-item__title">
+						<span>We are CimpleO</span>
+						<span>We develop software</span>
+						<span>We do it well</span>
+					</h1>
+					<div class="slider-link">
+						<a href="#" class="slider-item__link slider-item__link_collumn">
+							<span class="slider-item__text">Let's meet</span>
+							<img src="./images/arrow/meet.svg" alt="Узнать больше" class="slider-item__img slider-item__img_rotate">
+						</a>
+					</div>
+				</div>
+
+				<div class="slider-item">
+					<h2 class="slider-item__title">
+						<span>Fullstack</span>
+						<span>CMS Development</span>
+						<span>JAMStack</span>
+					</h2>
+					<div class="slider-link">
+						<a href="#" class="slider-item__link">
+							<span class="slider-item__text">All Posts</span>
+							<img src="./images/arrow/meet.svg" alt="Узнать больше" class="slider-item__img">
+						</a>
+					</div>
+				</div>
+
+				<div class="slider-item">
+					<h2 class="slider-item__title">
+						<span>Fullstack</span>
+						<span>CMS Development</span>
+						<span>JAMStack</span>
+					</h2>
+					<div class="slider-link">
+						<a href="#" class="slider-item__link">
+							<span class="slider-item__text">All Posts</span>
+							<img src="./images/arrow/meet.svg" alt="Узнать больше" class="slider-item__img">
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="slider-dots">
+				<span class="slider-dots__item" data-slide="1"></span>
+				<span class="slider-dots__item" data-slide="2"></span>
+				<span class="slider-dots__item" data-slide="3"></span>
+				<span class="slider-dots__item" data-slide="4"></span>
+				<span class="slider-dots__item" data-slide="5"></span>
+			</div>
+		</div>
+	</section>
+	<!-- end section about -->
 	<!-- end main -->
 
 	<script src="./js/select.js"></script>
