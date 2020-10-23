@@ -344,11 +344,11 @@ template {
 }
 
 /* general */
-*,
-::after,
-::before {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -609,6 +609,11 @@ img {
   padding: 12px 24px;
   color: #fff;
   font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 33px;
+  position: relative;
 }
 
 .slider-item__link_collumn {
@@ -617,6 +622,7 @@ img {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .slider-item__text {
@@ -645,12 +651,18 @@ img {
   -webkit-transform: rotate(270deg);
       -ms-transform: rotate(270deg);
           transform: rotate(270deg);
+  position: absolute;
+  left: 120px;
 }
 
 .slider-item__img_rotate {
+  margin-left: 0;
   -webkit-transform: rotate(0) translateY(10px);
       -ms-transform: rotate(0) translateY(10px);
           transform: rotate(0) translateY(10px);
+  position: absolute;
+  top: 35px;
+  left: 65px;
 }
 
 .slider-link {
@@ -742,3 +754,149 @@ img {
 }
 
 /*end slider*/
+/* services */
+.services {
+  margin-top: 149px;
+}
+
+.services-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-title span {
+  background-color: #FFD600;
+  display: block;
+  width: 78px;
+  height: 1px;
+}
+
+.services-title__title {
+  color: #fff;
+  font-family: 'Russo One', sans-serif;
+  font-weight: normal;
+  font-size: 48px;
+  font-style: normal;
+  margin-left: 10px;
+}
+
+.services-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.services-caption {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.services-caption__subtitle {
+  margin-left: 5px;
+  font-family: 'Russo One', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: 1px solid #FFD600;
+  width: 100%;
+}
+
+.services-item {
+  -webkit-flex-basis: 23.5%;
+      -ms-flex-preferred-size: 23.5%;
+          flex-basis: 23.5%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px 5px 8px 8px;
+  min-height: 432px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  margin-top: 55px;
+  -webkit-transition: 0.1s linear;
+  -o-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+.services-item__text {
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 20px;
+}
+
+.services-item__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.services-item:hover {
+  border: 1px solid #FFD600;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.footer__img {
+  display: block;
+  margin-right: 4px;
+}
+
+.footer__img:last-child {
+  margin-right: 0;
+}

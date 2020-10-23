@@ -35,9 +35,15 @@
 			padding: 12px 24px;
 			color: #fff;
 			font-family: 'Nunito', sans-serif;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 24px;
+			line-height: 33px;
+			position: relative;
 
 			&_collumn {
 				flex-direction: column;
+				position: relative;
 			}
 		}
 
@@ -64,9 +70,15 @@
 		&__img {
 			margin-left: 10px;
 			transform: rotate(270deg);
+			position: absolute;
+			left: 120px;
 
 			&_rotate {
+				margin-left: 0;
 				transform: rotate(0) translateY(10px);
+				position: absolute;
+				top: 35px;
+				left: 65px;
 			}
 		}
 	}
